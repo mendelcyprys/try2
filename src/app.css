@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Noto Serif Hebrew";
+    src: url("fonts/NotoSerifHebrew-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: "SBL Hebrew";
+    src: url("fonts/SBL_Hbrw.ttf");
+}
+
+@font-face {
+    font-family: "Ezra SIL";
+    src: url("fonts/SILEOTSR.woff");
+}
