@@ -1,5 +1,8 @@
 <script lang="ts">
   import katex from "katex";
+
+  import { text as newMoonText } from '$lib/texts/new-moon.json';
+  import { text as foundationsTorah} from '$lib/texts/foundations-torah.json';
 </script>
 
 <div class="text-3xl">
@@ -10,24 +13,15 @@
 </div>
 
 <div class="hebrew m-10 text-4xl">
-  המסלול הפתלתל שעברה השפה העברית והתהליכים הרבים שחלו בה במרוצת הדורות מכוננים
-  עולם מחקרי מרתק, במהלך ההיסטוריה בא העם היהודי במגע עם תרבויות רבות מן העולם
-  העתיק ומן העולם המודרני. מחקר ולימוד הלשון העברית חושפים בפני הלומדים את
-  התמורות שחלו בשפה בעקבות מפגשים אלו.
+  {@html newMoonText[0][0]}
 </div>
 
-<div class="hebrew2 m-10 text-4xl">
-  המסלול הפתלתל שעברה השפה העברית והתהליכים הרבים שחלו בה במרוצת הדורות מכוננים
-  עולם מחקרי מרתק, במהלך ההיסטוריה בא העם היהודי במגע עם תרבויות רבות מן העולם
-  העתיק ומן העולם המודרני. מחקר ולימוד הלשון העברית חושפים בפני הלומדים את
-  התמורות שחלו בשפה בעקבות מפגשים אלו.
+<div class="sbl m-10 text-4xl">
+  {@html foundationsTorah[0][5]}
 </div>
 
-<div class="hebrew3 m-10 text-4xl">
-  המסלול הפתלתל שעברה השפה העברית והתהליכים הרבים שחלו בה במרוצת הדורות מכוננים
-  עולם מחקרי מרתק, במהלך ההיסטוריה בא העם היהודי במגע עם תרבויות רבות מן העולם
-  העתיק ומן העולם המודרני. מחקר ולימוד הלשון העברית חושפים בפני הלומדים את
-  התמורות שחלו בשפה בעקבות מפגשים אלו.
+<div class="ezra m-10 text-4xl">
+  {@html newMoonText[0][0]}
 </div>
 
 <style>
@@ -35,15 +29,16 @@
     font-family: "Noto Serif Hebrew";
     font-variation-settings: "wght" 700, "wdth" 100;
     direction: rtl;
+    line-height: 60px;
   }
-  .hebrew2 {
+  .sbl {
     font-family: "SBL Hebrew";
     direction: rtl;
+    line-height: 60px;
   }
-  .hebrew3 {
+  .ezra {
     font-family: "Ezra SIL";
     direction: rtl;
     line-height: 60px;
-    font-weight: 500;
   }
 </style>
